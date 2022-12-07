@@ -1,0 +1,50 @@
+:host {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 480px));
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  box-shadow: 0 5px 5px #eaeaea;
+  transition: all .2s ease-in;
+  will-change: box-shadow, transform;
+
+  &__title {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 5px #eaeaea;
+    transform: translateY(-5px);
+  }
+}
+
+.appointments-info {
+  margin-top: .5rem;
+  padding-top: .5rem;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+li {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
